@@ -24,7 +24,7 @@ function Hero() {
               </p>
 
               <p className="text-[#444] mb-5 font-poppins font-medium tracking-[0.15px] leading-tight">
-                12 Months · Online · Dual Certificate · Rated 4.8/5 by 14K+
+                12 Months · Online Certificate · Rated 4.8/5 by 14K+
                 Learners
               </p>
 

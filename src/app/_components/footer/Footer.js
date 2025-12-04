@@ -6,7 +6,7 @@ function Footer() {
     <section>
       <div className="py-10 bg-background-2">
         <div className="flex max-w-7xl m-auto px-4 md:px-0">
-          <div className="max-w-3xl w-full text-center md:text-left">
+          <div className="lg:max-w-3xl w-full text-center md:text-left">
             <div className="py-14">
               <div className="max-w-6xl mx-auto px-4">
                 {/* Heading */}
@@ -19,7 +19,7 @@ function Footer() {
                   {/* LOGO */}
                   <div className="w-[180px] sm:w-[220px] md:w-[260px] mb-4  shrink-0">
                     <Image
-                      src="/greatlearning-brand.svg" // <-- change this URL only
+                      src="/logo.png" // <-- change this URL only
                       alt="Great Learning"
                       width={260}
                       height={120}
@@ -29,13 +29,11 @@ function Footer() {
 
                   {/* TEXT */}
                   <p className="text-black/70 text-[16px] leading-7 font-poppins max-w-3xl">
-                    The McCombs School of Business at The University of Texas at
-                    Austin is collaborating with Great Learning to deliver the
-                    PG Program in Data Science with Generative AI. Great
-                    Learning is an ed-tech company that has empowered learners
-                    from over{" "}
-                    <span className="font-semibold">170+ countries</span>
-                    to achieve positive career growth outcomes.
+                At INTTRVU.ai, we&apos;re comrnitted to preparing today&apos;s workforce for tomorrow&apos;s technology demands.
+We empower learners to upskill in Data Science, Generative Al, Data Analytics, and Al through
+immersive, project-based programs. By fostering a strong community of learners and industry
+experts, we aim to create a future where everyone has the skills to succeed in an ever-evolving tech
+landscape,
                   </p>
                 </div>
               </div>

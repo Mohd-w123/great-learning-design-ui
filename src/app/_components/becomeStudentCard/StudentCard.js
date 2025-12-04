@@ -5,7 +5,7 @@ function StudentCard() {
     <section>
       <div className="py-10">
         <div className="flex max-w-7xl m-auto px-4">
-          <div className="max-w-3xl w-full text-center md:text-left">
+          <div className="lg:max-w-3xl w-full text-center md:text-left">
             <div
               className="
             relative bg-[#BF6625] rounded-2xl p-10 text-white overflow-hidden
@@ -15,7 +15,7 @@ function StudentCard() {
             >
               {/* CONTENT ABOVE SHAPES */}
               <div className="relative z-10">
-                <h2 className="text-4xl font-bold leading-tight">
+                <h2 className="md:text-4xl text-3xl font-bold leading-tight">
                   Become a Data Scientist.
                   <br />
                   Gear up for the future.

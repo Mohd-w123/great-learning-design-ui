@@ -1,65 +1,113 @@
+"use client";
+
 import Button from "@/app/ui/button/Button";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 function FloatCard() {
+  const formRef = useRef(null);
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+
+    formRef.current.reset();
+
+ 
+    window.location.href = "https://inttrvu.ai/thank-you-data-science/"; // <-- change link here
+  }
+
   return (
-   <div className="h-full w-full absolute top-0 p-4 hidden min-[1120px]:block">
-  <div className="max-w-sm w-full bg-white shadow-xl rounded-2xl p-5 sticky top-5 lg:left-[67%]">
+    <div className="h-full w-[420px] lg:left-[67%] absolute top-0 p-4 hidden min-[1120px]:block">
+      <div className="max-w-md w-full bg-white shadow-xl rounded-2xl p-6 sticky top-5 lg:left-[67%]">
 
-    {/* IMAGE */}
-    <div className="w-full h-[200px] rounded-lg overflow-hidden">
-      <Image
-        src="/banner-card.jpg"
-        alt="Program"
-        width={500}
-        height={300}
-        className="w-full h-full object-cover"
-      />
+        <h2 className="text-2xl sm:text-3xl font-semibold text-center text-black/80 mb-6">
+          Free Counselling with Experts
+        </h2>
+
+        {/* FORM */}
+        <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col gap-6">
+
+          {/* NAME */}
+          <input
+            type="text"
+            placeholder="Enter your Full Name *"
+            className="w-full border-b border-gray-300 py-3 text-[16px] outline-none placeholder:text-gray-400"
+            required
+          />
+
+          {/* EMAIL */}
+          <input
+            type="email"
+            placeholder="Enter your Email *"
+            className="w-full border-b border-gray-300 py-3 text-[16px] outline-none placeholder:text-gray-400"
+            required
+          />
+
+          {/* PHONE */}
+          <div className="flex items-center gap-4 border-b border-gray-300 pb-3">
+            <Image
+              src="/indian.jpg"
+              alt="India"
+              width={32}
+              height={20}
+              className="rounded"
+            />
+            <span className="text-[16px] text-gray-700 font-medium">+91</span>
+
+            <input
+              type="tel"
+              placeholder="Phone Number *"
+              className="flex-1 outline-none text-[16px] placeholder:text-gray-400"
+              required
+            />
+          </div>
+
+          {/* WORK EXPERIENCE */}
+          <div className="border-b border-gray-300 pb-3">
+            <select
+              className="w-full outline-none text-[16px] bg-transparent text-gray-700"
+              defaultValue=""
+              required
+            >
+              <option value="" disabled>Work Experience *</option>
+              <option value="0">0 Years</option>
+              <option value="1">1 Year</option>
+              <option value="2">2 Years</option>
+              <option value="3">3+ Years</option>
+            </select>
+          </div>
+
+          {/* COURSE PREFERENCE */}
+          <div className="border-b border-gray-300 pb-3">
+            <select
+              className="w-full outline-none text-[16px] bg-transparent text-gray-700"
+              defaultValue=""
+              required
+            >
+              <option value="" disabled>Select Course Preference *</option>
+              <option value="ds">Data Science</option>
+              <option value="ai">AI / ML</option>
+              <option value="da">Data Analytics</option>
+            </select>
+          </div>
+
+          {/* TERMS */}
+          <p className="text-[12px] text-gray-500 text-center leading-snug">
+            By submitting the form, you agree to our Terms & Conditions and Privacy Policy.
+          </p>
+
+          {/* BUTTON */}
+          <button
+            type="submit"
+            className="w-full bg-[#1472F2] hover:bg-[#0f5ccc] text-white font-semibold py-3.5 rounded-lg text-[16px]"
+          >
+            Apply For Counselling
+          </button>
+
+        </form>
+      </div>
     </div>
-
-    {/* TITLE */}
-    <h2 className="mt-5 text-xl font-semibold font-poppins text-center text-black/90 leading-snug">
-      PG Program in Data Science <br /> with Generative AI
-    </h2>
-
-    {/* SUBTITLE */}
-    <p className="mt-2 text-center text-black/60 font-medium font-poppins">
-      12 Months • Online • Dual Certificate
-    </p>
-
-    {/* BUTTON: Brochure */}
-    <Button
-      reff={"#"}
-      clas={
-        "mt-6 w-full bg-[#1560F3] hover:bg-[#0f4cd1] text-white font-semibold py-3 rounded-lg font-poppins"
-      }
-      text={"DOWNLOAD BROCHURE"}
-    />
-
-    {/* BUTTON: Curriculum */}
-    <Button
-      reff={"#"}
-      clas={
-        "mt-3 w-full border border-[#1560F3] font-semibold py-3 rounded-lg font-poppins hover:bg-blue-50"
-      }
-      bg={"bg-white"}
-      clr={"text-[#1560F3]"}
-      text={"DOWNLOAD CURRICULUM"}
-    />
-
-    {/* DEADLINE SECTION */}
-    <div className="mt-6 text-left">
-      <p className="text-sm text-black/80 font-medium font-poppins">
-        Application closes on
-      </p>
-      <p className="mt-1 text-[#C1272D] font-semibold font-poppins">
-        5th Dec 2025
-      </p>
-    </div>
-  </div>
-</div>
-
   );
 }
 

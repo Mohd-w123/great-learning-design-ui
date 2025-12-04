@@ -7,7 +7,7 @@ function Curriculum() {
 <section>
   <div className="py-10 bg-background-2">
     <div className="flex max-w-7xl m-auto px-4">
-      <div className="max-w-3xl w-full text-center md:text-left">
+      <div className="lg:max-w-3xl w-full text-center md:text-left">
 
         <span className="text-sec-heading font-poppins font-medium text-[12px] leading-4 tracking-[2.4px] mb-2 inline-block uppercase">
           Comprehensive curriculum to help
@@ -17,11 +17,7 @@ function Curriculum() {
           Master industry-valued skills
         </h2>
 
-        <p className="font-poppins lg:w-full  md:w-[600px]   font-normal mb-4 text-black/80 text-sm sm:text-base md:text-lg">
-          Strengthen your profile with Learn Data Science & Generatice AI
-          with a syllabus designed by the faculty at UT Austin McCombs
-          School of Business and Great Lakes
-        </p>
+  
 
         {/* ICON GRID */}
         <div className="flex flex-wrap gap-5 mb-4 justify-center md:justify-start">
@@ -82,9 +78,9 @@ function Curriculum() {
         </div>
 
         {/* STATS BOXES */}
-        <div className="flex flex-col sm:flex-row gap-6 mb-8 justify-center md:justify-start">
+        <div className="flex flex-col sm:flex-row gap-6 mb-8 justify-center lg:justify-start">
 
-          <div className="p-2 flex gap-4 justify-center items-center bg-white rounded-lg w-full sm:w-auto">
+          <div className="p-2 flex gap-4 justify-center items-center  bg-white rounded-lg w-full sm:w-auto">
             <div className="py-2 px-4 bg-[#ffbc4c] rounded-4xl text-[20px] font-poppins">
               22+
             </div>
@@ -107,7 +103,7 @@ function Curriculum() {
 
         </div>
 
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center lg:justify-start">
           <Button text={"DOWNLOAD CURRICULUM"} reff={"#"} clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6  py-4 px-10 hover:bg-[#0f4cd1]"} />
         </div>
 

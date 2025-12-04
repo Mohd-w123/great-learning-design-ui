@@ -7,7 +7,7 @@ function StayAhead() {
     <div className="flex max-w-7xl m-auto px-4">
 
       {/* MAIN CONTENT */}
-      <div className="max-w-3xl w-full text-center md:text-left">
+      <div className="lg:max-w-3xl w-full text-center md:text-left">
 
         {/* TOP SMALL HEADING */}
         <span className="text-sec-heading font-poppins font-medium text-[12px] leading-4 tracking-[2.4px] mb-2 inline-block">
@@ -18,7 +18,7 @@ function StayAhead() {
         <h2 className="
           text-3xl sm:text-4xl md:text-5xl 
           leading-tight md:leading-[64px] 
-           lg:w-full  md:w-[600px] 
+           lg:w-full 
           mb-4 font-semibold font-poppins text-black/80
         ">
           Build a future-ready career in Data Science with GenAI

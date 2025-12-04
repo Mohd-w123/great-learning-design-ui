@@ -6,7 +6,7 @@ function DesignedFor() {
   <section>
   <div className="py-10">
     <div className="flex max-w-7xl m-auto px-4 ">
-      <div className="max-w-3xl w-full text-center md:text-left">
+      <div className="lg:max-w-3xl w-full text-center md:text-left">
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight md:leading-16 mb-8 font-poppins font-semibold">
           Designed for Working Professionals like you

@@ -5,7 +5,7 @@ function Navbar() {
     <header className="shadow-xl px-[26px] pt-[5px]">
       <nav className="py-3">
         <Image
-          src={"greatlearning-brand.svg"}
+          src={"/logo.png"}
           className=""
           width={102}
           height={32}
