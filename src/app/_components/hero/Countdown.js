@@ -45,7 +45,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className="flex flex-col self-end text-center mt-4">
+    <div className="flex flex-col self-end text-center">
 
       {/* TOP NUMBERS */}
       <div className="flex items-center justify-center gap-2">

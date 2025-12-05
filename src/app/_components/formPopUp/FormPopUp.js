@@ -136,7 +136,7 @@ export default function FormPopUp({
               onChange={(e) => setName(e.target.value)}
               placeholder="Enter your Full Name *"
               required
-              className="w-full border-b border-slate-200 py-3 placeholder:text-slate-400 outline-none"
+              className="w-full text-black border-b border-slate-200 py-3 placeholder:text-slate-400 outline-none"
             />
 
             <input
@@ -145,7 +145,7 @@ export default function FormPopUp({
               placeholder="Enter your Email *"
               type="email"
               required
-              className="w-full border-b border-slate-200 py-3 placeholder:text-slate-400 outline-none"
+              className="w-full border-b text-black border-slate-200 py-3 placeholder:text-slate-400 outline-none"
             />
 
             {/* PHONE FIELD */}
@@ -163,7 +163,7 @@ export default function FormPopUp({
                 placeholder="Phone Number *"
                 type="tel"
                 required
-                className="flex-1 outline-none py-2 placeholder:text-slate-400"
+                className="flex-1 text-black outline-none py-2 placeholder:text-slate-400"
               />
             </div>
 
