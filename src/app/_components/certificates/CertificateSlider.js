@@ -63,14 +63,7 @@ export default function CertificateSlider({ images = [], peek = 170 }) {
         className="!w-[520px] certificate-slide"
         style={{ width: "520px" }}
       >
-        <div className="relative w-full max-w-full aspect-[520/367]">
-          <Image
-            src={src}
-            alt=""
-            fill
-            className="object-cover rounded-lg w-full h-full"
-          />
-        </div>
+       
       </SwiperSlide>
     ))}
   </Swiper>

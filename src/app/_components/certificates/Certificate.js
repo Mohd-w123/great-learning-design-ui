@@ -23,15 +23,16 @@ certifications, empowering you to become a Data scientist and land high-paying j
 opportunities in Data Science & AI.
         </p>
 
-        <div className="py-10 w-full flex justify-center md:justify-start">
+        <div className="py-10 w-full flex justify-center lg:justify-start">
           <div className="w-full md:max-w-full  xl:max-w-[768px] xl:mx-auto">
-            <CertificateSlider
-              images={[
-                "/certificate.jpeg",
-                "/certificate.jpeg",
-                "/certificate.jpeg",
-              ]}
-            />
+          <div className="relative w-full   max-w-[520px]   aspect-[520/367]">
+          <Image
+            src={"/certificate.jpeg"}
+            alt=""
+            fill
+            className="object-cover rounded-lg w-full h-full"
+          />
+        </div>
           </div>
         </div>
 

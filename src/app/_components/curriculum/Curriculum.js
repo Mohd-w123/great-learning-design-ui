@@ -104,7 +104,7 @@ function Curriculum() {
         </div>
 
         <div className="flex justify-center lg:justify-start">
-          <Button text={"DOWNLOAD CURRICULUM"} reff={"#"} clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6  py-4 px-10 hover:bg-[#0f4cd1]"} />
+          <Button text={"DOWNLOAD CURRICULUM"} reff={"#"} clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6  py-4 px-10 text-white hover:bg-[#0f4cd1]"} />
         </div>
 
       </div>

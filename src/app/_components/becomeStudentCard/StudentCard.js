@@ -1,3 +1,4 @@
+import Button from "@/app/ui/button/Button";
 import React from "react";
 
 function StudentCard() {
@@ -5,7 +6,7 @@ function StudentCard() {
     <section>
       <div className="py-10">
         <div className="flex max-w-7xl m-auto px-4">
-          <div className="lg:max-w-3xl w-full text-center md:text-left">
+          <div className="lg:max-w-3xl   w-full text-center md:text-left">
             <div
               className="
             relative bg-[#BF6625] rounded-2xl p-10 text-white overflow-hidden
@@ -26,9 +27,9 @@ function StudentCard() {
                   Science with Generative AI
                 </p>
 
-                <button className="mt-6 bg-white text-black font-semibold px-8 py-3 rounded-xl">
-                  START NOW
-                </button>
+                <Button text={"START NOW"} reff={"#"} clas={"mt-6 bg-white text-black font-semibold px-8 py-3 rounded-xl"}/>
+               
+           
               </div>
             </div>
           </div>

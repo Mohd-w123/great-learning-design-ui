@@ -8,6 +8,7 @@ export default function AlumniCard({
   userImage,
   userName,
   userRole,
+  
 }) {
   const contentRef = useRef(null);
   const [expanded, setExpanded] = useState(false);
@@ -22,7 +23,7 @@ export default function AlumniCard({
   }, [review]);
 
   return (
-    <div className="w-full sm:w-[380px] lg:w-[420px] bg-white rounded-2xl shadow-xl p-6 flex flex-col gap-4">
+    <div className="w-full max-[420px]:w-[320px] max-w-[420px] bg-white rounded-2xl shadow-xl p-6 flex flex-col gap-4">
 
       {/* Company Logo */}
      <div className="w-[104px] h-[40px] relative">

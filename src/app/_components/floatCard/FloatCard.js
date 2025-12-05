@@ -1,6 +1,6 @@
 "use client";
 
-import Button from "@/app/ui/button/Button";
+
 import Image from "next/image";
 import React, { useRef } from "react";
 
@@ -14,11 +14,11 @@ function FloatCard() {
     formRef.current.reset();
 
  
-    window.location.href = "https://inttrvu.ai/thank-you-data-science/"; // <-- change link here
+    window.location.href = "https://inttrvu.ai/campaign/datascienceandaicourse"; // <-- change link here
   }
 
   return (
-    <div className="h-full w-[420px] lg:left-[67%] absolute top-0 p-4 hidden min-[1120px]:block">
+    <div className="h-full w-[420px] lg:left-[67%] absolute top-0 p-4 hidden min-[1150px]:block">
       <div className="max-w-md w-full bg-white shadow-xl rounded-2xl p-6 sticky top-5 lg:left-[67%]">
 
         <h2 className="text-2xl sm:text-3xl font-semibold text-center text-black/80 mb-6">
@@ -100,10 +100,11 @@ function FloatCard() {
           {/* BUTTON */}
           <button
             type="submit"
-            className="w-full bg-[#1472F2] hover:bg-[#0f5ccc] text-white font-semibold py-3.5 rounded-lg text-[16px]"
-          >
-            Apply For Counselling
-          </button>
+            className={"w-full bg-[#1472F2] hover:bg-[#0f5ccc] cursor-pointer text-white font-semibold py-3.5 rounded-lg text-[16px]"}
+         
+          >Apply For Counselling</button>
+ 
+         
 
         </form>
       </div>
