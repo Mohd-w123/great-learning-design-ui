@@ -20,10 +20,10 @@ function Navbar() {
         <Button click={() => {
            setOpen(true)
         }
-        } text={"Apply Now"} reff={"#"} clas={"sm:px-5 sm:py-2.5 sm:text-[16px]  text-[14px]  px-3 py-1.5 rounded-lg font-poppins font-normal text-white cursor-pointer hover:bg-[#0f4cd1] "}/>
+        } text={"Apply For Counselling"} reff={"#"} clas={"sm:px-5 sm:py-2.5 sm:text-[16px]  text-[14px]  px-3 py-1.5 rounded-lg font-poppins font-normal text-white cursor-pointer hover:bg-[#0f4cd1] "}/>
 
 
-<FormPopUp open={open} onClose={() => setOpen(false)} imageSrc="/emloy.jpeg" submitRedirect="https://inttrvu.ai/campaign/datascienceandaicourse" />
+<FormPopUp open={open} text="Apply For Counselling" onClose={() => setOpen(false)} imageSrc="/emloy.jpeg" submitRedirect="https://inttrvu.ai/thank-you-data-science/" />
       </nav>
     </header>
   );

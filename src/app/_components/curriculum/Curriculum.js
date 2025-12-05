@@ -1,8 +1,12 @@
+"use client"
 import Button from "@/app/ui/button/Button";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import FormPopUp from "../formPopUp/FormPopUp";
 
 function Curriculum() {
+const [open, setOpen] = useState(false);
+
   return (
 <section>
   <div className="py-10 bg-background-2">
@@ -104,7 +108,11 @@ function Curriculum() {
         </div>
 
         <div className="flex justify-center lg:justify-start">
-          <Button text={"DOWNLOAD CURRICULUM"} reff={"#"} clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6  py-4 px-10 text-white hover:bg-[#0f4cd1]"} />
+          <Button click={() => {
+           setOpen(true)
+        }
+        } text={"DOWNLOAD CURRICULUM"} reff={"#"} clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6  py-4 px-10 text-white hover:bg-[#0f4cd1]"}/>
+          <FormPopUp open={open} text="Download Curriculum" onClose={() => setOpen(false)} imageSrc="/emloy.jpeg" submitRedirect="https://inttrvu.ai/thank-you-data-science/" />
         </div>
 
       </div>

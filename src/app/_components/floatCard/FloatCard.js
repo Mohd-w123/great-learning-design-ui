@@ -14,7 +14,7 @@ function FloatCard() {
     formRef.current.reset();
 
  
-    window.location.href = "https://inttrvu.ai/campaign/datascienceandaicourse"; // <-- change link here
+    window.location.href = "https://inttrvu.ai/thank-you-data-science/"; // <-- change link here
   }
 
   return (

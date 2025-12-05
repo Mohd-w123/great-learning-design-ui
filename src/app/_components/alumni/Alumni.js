@@ -97,7 +97,7 @@ function Alumni() {
   return (
     <section>
       <div className="py-10 bg-background-2">
-        <div className="flex max-w-7xl m-auto max-[400px]:px-1.5  min-[450px]:px-4 ">
+        <div className="flex max-w-7xl m-auto max-[400px]:px-4  min-[450px]:px-4 ">
           <div className="lg:max-w-3xl w-full text-center md:text-left">
 
             {/* Header + Buttons */}
@@ -112,14 +112,7 @@ function Alumni() {
              <div className="hidden md:flex gap-3">
   
   {/* PREV BUTTON */}
-  <button
-    className="
-      swiper-button-prev-custom cursor-pointer shadow bg-white rounded-full 
-      w-[72px] h-[72px] flex justify-center items-center
-      transition-all duration-200 
-      hover:bg-gray-100 active:scale-95 active:bg-gray-200
-    "
-  >
+  <button className="swiper-button-prev-custom cursor-pointer shadow bg-white rounded-full w-[72px] h-[72px] flex justify-center items-center transition-all duration-200 hover:bg-gray-100 active:scale-95 active:bg-gray-200">
     <svg width="16" height="16" viewBox="0 0 16 16">
       <path
         d="M15 9H3.83L8.71 13.88C9.1 14.27 9.1 14.91 8.71 15.3C8.32 15.69 7.69 15.69 7.3 15.3L0.709999 8.71C0.319999 8.32 0.319999 7.69 0.709999 7.3L7.29 0.700001C7.68 0.310001 8.31 0.310001 8.7 0.700001C9.09 1.09 9.09 1.72 8.7 2.11L3.83 7H15C15.55 7 16 7.45 16 8C16 8.55 15.55 9 15 9Z"
@@ -130,12 +123,7 @@ function Alumni() {
 
   {/* NEXT BUTTON */}
   <button
-    className="
-      swiper-button-next-custom cursor-pointer shadow bg-white rounded-full 
-      w-[72px] h-[72px] flex justify-center items-center
-      transition-all duration-200 
-      hover:bg-gray-100 active:scale-95 active:bg-gray-200
-    "
+    className="swiper-button-next-custom cursor-pointer shadow bg-white rounded-full w-[72px] h-[72px] flex justify-center items-center transition-all duration-200 hover:bg-gray-100 active:scale-95 active:bg-gray-200"
   >
     <svg width="16" height="16" viewBox="0 0 16 16">
       <path
@@ -152,7 +140,7 @@ function Alumni() {
             {/* Slider */}
 <Swiper
   modules={[Navigation]}
-  slidesPerView={"auto"}
+  // slidesPerView={"auto"}
   spaceBetween={24}
   centeredSlides={false}
 
@@ -166,6 +154,18 @@ function Alumni() {
     });
   }}
 
+  breakpoints={{
+    0: {
+      spaceBetween: "-20px",
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: "auto", // desktop
+    },
+  }}
+
   navigation={{
     prevEl: ".swiper-button-prev-custom",
     nextEl: ".swiper-button-next-custom",
@@ -176,8 +176,8 @@ function Alumni() {
   {alumniData.map((item, index) => (
     <SwiperSlide
       key={index}
-      className="!w-[420px] !flex-shrink-0"
-      style={{ width: "420px" }}   // FIXED width (like your 520px example)
+      className="lg:!w-[420px] md:!w-[420px] !flex-shrink-0"
+      // style={{ width: "420px" }}   // FIXED width (like your 520px example)
     >
       <AlumniCard
         companyLogo={item.companyLogo}

@@ -1,9 +1,14 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 import Image from "next/image";
 import Button from "@/app/ui/button/Button";
 import CompreLine from "./CompreLine";
 import Countdown from "./Countdown";
+import FormPopUp from "../formPopUp/FormPopUp";
+
 function Hero() {
+      const [open, setOpen] = useState(false);
+
   return (
     <main>
       <div className="py-10">
@@ -30,7 +35,12 @@ function Hero() {
               </p>
 
               <div className="flex justify-center lg:justify-start">
-                <Button text={"DOWNLOAD BROCHURE"} reff="#" clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6 text-white   py-4 px-10 hover:bg-[#0f4cd1]"} />
+                <Button click={() => {
+           setOpen(true)
+        }
+        } text={"DOWNLOAD BROCHURE"} reff="#" clas={"rounded-lg font-poppins font-medium tracking-[1.25px] leading-6 text-white   py-4 px-10 hover:bg-[#0f4cd1]"}/>
+        <FormPopUp open={open} text="Download Brochure" onClose={() => setOpen(false)} imageSrc="/emloy.jpeg" submitRedirect="https://inttrvu.ai/thank-you-data-science/" />
+        
               </div>
             </div>
 
@@ -59,7 +69,7 @@ function Hero() {
           {/* RIGHT IMAGE — hidden on small screens */}
           <div className="hidden lg:block mr-3.5 relative w-full h-[450px]">
             <Image
-              src="/ds_lp_banner_img.jpg"
+              src="/header-image.jpeg"
               alt="image"
               fill
               className="object-cover"

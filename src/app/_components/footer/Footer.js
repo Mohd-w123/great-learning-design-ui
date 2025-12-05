@@ -10,7 +10,7 @@ function Footer() {
             <div className="py-14">
               <div className="max-w-6xl mx-auto px-4">
                 {/* Heading */}
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-poppins mb-10">
+                <h2 className="text-3xl sm:text-4xl md:text-4xl font-semibold font-poppins mb-10">
                   Delivered in Collaboration with:
                 </h2>
 

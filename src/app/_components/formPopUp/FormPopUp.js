@@ -8,6 +8,7 @@ export default function FormPopUp({
   onClose = () => {},
   imageSrc = "/popup-left.jpg",
   submitRedirect = undefined,
+  text
 }) {
   const overlayRef = useRef(null);
   const modalRef = useRef(null);
@@ -76,11 +77,12 @@ export default function FormPopUp({
       <div
         ref={modalRef}
         className="
-          relative w-full max-w-6xl bg-white rounded-xl shadow-2xl 
+          relative max-w-6xl bg-white rounded-xl shadow-2xl 
           overflow-hidden flex flex-col lg:flex-row 
-          max-h-[90vh] overflow-y-auto
+          align-items-center
+          max-h-[75vh] overflow-y-auto
         "
-        style={{ minHeight: 520 }}
+        style={{ minHeight: 520, alignItems: "center" }}
       >
         {/* CLOSE BUTTON */}
         <button
@@ -109,22 +111,22 @@ export default function FormPopUp({
         </button>
 
         {/* LEFT IMAGE — hidden on mobile */}
-        <div className="hidden  rounded-lg overflow-hidden   lg:flex w-full lg:w-1/2 bg-white items-center justify-center p-0">
-          <div className="w-full  px-10 py-9 h-full">
+        <div className="hidden overflow-hidden lg:flex lg:w-1/2 bg-white items-center justify-center p-0">
+          <div className="w-full">
             <Image
               src={imageSrc}
               alt="Promo"
-              width={900}
-              height={900}
-              className="w-full h-full object-contain"   // MATCH HEIGHT PERFECTLY
+              width={480}
+              height={300}
+              className="h-auto object-cover"   // MATCH HEIGHT PERFECTLY
             />
           </div>
         </div>
 
         {/* RIGHT FORM */}
         <div className="w-full lg:w-1/2 p-8 lg:px-12 lg:py-10">
-          <h3 className="text-2xl font-semibold text-slate-900 mb-6 text-center lg:text-left">
-            Apply For Counselling
+          <h3 className="text-2xl font-semibold text-slate-900 mb-6 text-center">
+            {text}
           </h3>
 
           <form onSubmit={handleSubmit} className="flex flex-col gap-5">
@@ -169,7 +171,7 @@ export default function FormPopUp({
               value={workExp}
               onChange={(e) => setWorkExp(e.target.value)}
               required
-              className="w-full border-b border-slate-200 py-3 bg-transparent outline-none"
+              className="w-full border-b border-slate-200 py-3 text-black bg-transparent outline-none"
             >
               <option value="" disabled>
                 Work Experience *
@@ -184,7 +186,7 @@ export default function FormPopUp({
               value={course}
               onChange={(e) => setCourse(e.target.value)}
               required
-              className="w-full border-b border-slate-200 py-3 bg-transparent outline-none"
+              className="w-full border-b text-black border-slate-200 py-3 bg-transparent outline-none"
             >
               <option value="" disabled>
                 Select Course Preference *
@@ -200,7 +202,7 @@ export default function FormPopUp({
 
             <button
               type="submit"
-              className="mt-4 w-full bg-[#1472F2] hover:bg-[#0f5ccc] text-white font-semibold py-3.5 rounded-lg"
+              className="mt-4 w-full bg-[#1472F2] hover:bg-[#0f5ccc] text-white font-semibold py-3.5 rounded-lg cursor-pointer"
             >
               Apply For Counselling
             </button>
