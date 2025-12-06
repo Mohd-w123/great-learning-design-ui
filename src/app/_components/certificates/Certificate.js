@@ -14,7 +14,7 @@ function Certificate() {
       <div className="lg:max-w-3xl w-full text-center md:text-left">
 
         <h2 className="text-3xl    lg:w-full  sm:text-4xl md:text-5xl leading-tight md:leading-16 mb-4 font-poppins font-semibold">
-         Get Certified by inttrvu & NASSCOM
+         Get Certified by INTTRVU & NASSCOM
         </h2>
 
         <p className="font-poppins font-normal  lg:w-full    mb-4 text-black/80 text-sm sm:text-base md:text-lg">

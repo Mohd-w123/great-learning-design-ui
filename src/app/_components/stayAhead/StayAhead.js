@@ -34,7 +34,7 @@ function StayAhead() {
           {/* BOX 1 */}
           <div className="py-[34px] w-full sm:w-[300px] px-5 shadow-xl rounded-lg">
             <p className="text-[#0041b2] text-4xl md:text-5xl font-semibold leading-[1.33] font-poppins">
-              50%
+              70%
             </p>
             <p className="text-[18px] md:text-[20px] font-medium leading-[1.4] tracking-[0.15px] font-poppins">
               Average Salary Hike*
@@ -44,7 +44,7 @@ function StayAhead() {
           {/* BOX 2 */}
           <div className="py-[34px] w-full sm:w-[300px] px-5 shadow-xl rounded-lg">
             <p className="text-[#066665] text-4xl md:text-5xl font-semibold leading-[1.33] font-poppins">
-              4451+
+              120+
             </p>
             <p className="text-[18px] md:text-[20px] font-medium leading-[1.4] tracking-[0.15px] font-poppins">
               Hiring Partners

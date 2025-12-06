@@ -18,7 +18,7 @@ function CareerSupport() {
 
         <div className="flex flex-wrap gap-6 justify-center md:justify-start">
           <CareerCards
-            text={"100% Placement Assistance"}
+            text={"Best Placement Assistance"}
             image={"/job-postings.jpg"}
           />
           <CareerCards
