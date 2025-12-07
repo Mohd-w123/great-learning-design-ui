@@ -23,7 +23,7 @@ function StudentCard() {
                 </h2>
 
                 <p className="mt-3">
-                  Learn from India&apos;s Most Trusted PG Program in Data
+                  Learn from India&apos;s Most Trusted Program in Data
                   Science with Generative AI
                 </p>
 
